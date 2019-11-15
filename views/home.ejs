@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="post">
+    <input type="submit" value="click to insert the data">
+</form> <br>
+<%if(data.length>0){%>
+<table border="1" style="text-align: center;">
+    <thead>
+        <tr>
+            <th>
+                s.no
+            </th>
+            <th>
+                firstname
+            </th><th>
+                 lastname
+            </th>
+            <th>
+                phonenumber
+            </th>
+            <th>
+                city
+            </th>
+            <th>
+                state
+            </th>
+            <th>
+                country
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <%for(var i=0;i< data.length; i++){%>
+         <tr>
+             <td>
+                 <%= i%>
+             </td>
+             <td>
+                 <%= data[i].firstname%>
+             </td>
+             <td>
+                <%= data[i].lastname%>
+            </td>
+            <td>
+                <%= data[i].phonenumber%>
+            </td>
+            <td>
+                <%= data[i].city%>
+            </td>
+            <td>
+                <%= data[i].state%>
+            </td>
+            <td>
+                <%= data[i].country%>
+            </td>
+         </tr>
+         <%}%>   
+    </tbody>
+</table>
+<%}%>
+</body>
+</html>
