@@ -1,9 +1,14 @@
 # fakedata
-how to generate fakedata using faker.js
+this a small app to generate fakedata is built using Node,Express,Faker.jsMongodb and some other packages.
 
-open console/terminal and type the following-
+Usage
 
-npm install
+Install all the required packages
 
-npm start
+-- npm install
 
+Start App
+
+-- npm start
+
+App Run On:http://localhost:3000
